@@ -1,0 +1,673 @@
+/* STYLES CSS */
+
+/*----------------------------------------------------------GENERAL----------------------------------------------------------------------------------*/
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.intitulé {
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #3da9d5;
+}
+
+.light {
+    color: #c9d1d5;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.infos-necessaires {
+    color: #2980b9;
+}
+
+.informations_importantes {
+    color: #2980b9;
+}
+
+/* Style de la barre de navigation */
+.bloctitre {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    display: flex;
+    background-color: #90a1b9;
+}
+
+.bloctitre h1 {
+    margin-top: 28px;
+    font-size: 28px;
+    color: #3d67c7;
+}
+
+.bloc-recherche {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: max-content;
+    height: max-content;
+    padding: 5px;
+    background: #dad7d7;
+    border-radius: 10px;
+}
+
+.input-recherche {
+    margin-bottom: 5px;
+    margin-left: 5px;
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+#loupe_suiveuse {
+    display: none;
+    position: fixed;
+    pointer-events: none;
+    transition: transform 0.03s linear;
+    z-index: 100000;
+}
+
+.bouton-recherche {
+    border-radius: 3px;
+    width: 90px;
+    height: 30px;
+    margin-left: 7px;
+    box-shadow: 0px 0px 2.5px #000000;
+}
+
+.bouton-réinitialiser {
+    border-radius: 3px;
+    width: 90px;
+    height: 30px;
+    margin-left: 7px;
+    margin: 5px;
+    box-shadow: 0px 0px 2.5px #000000;
+}
+
+/* Champs de sélection à options */
+.champ_de_selection {
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.champ_de_selection.option {
+    font-size: 0.5em;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #c8d2d5;
+}
+
+.champ_de_selection.bouton {
+    width: 150px;
+    height: 75px;
+    border-radius: 15px;
+    font-size: 0.6em;
+}
+
+.resultat_recherche {
+    background-color: #1abc9c;
+}
+
+.bloctitre .liens {
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Style pour les textes généraux */
+.texte {
+    font-size: 1.2em;
+    margin: 20px;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.texte h2 {
+    color: #e74c3c;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+.texte ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.texte ul li {
+    margin-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+}
+
+/*----------------------------------------------------------PAGE1/ACCEUIL----------------------------------------------------------------------------*/
+
+.boutons-sections a {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.images-sections-img {
+    height: 250px;
+}
+
+.images-sections {
+    background-color: #c6d3e4;
+    position: relative;
+    transition: opacity 0.3s ease;
+    font-family: 'Verdana';
+}
+
+.images-sections::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.images-sections:hover::before {
+    opacity: 1;
+}
+
+/*----------------------------------------------------------PAGE2/CV----------------------------------------------------------------------------------*/
+
+
+.cv-de-jean {
+    display: none;
+}
+
+.cv-de-nathan {
+    display: none;
+}
+
+.titrepage {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+    color: #2c3e50;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Titre principal de CV */
+.entete-cv {
+    display: flex;
+    text-align: justify;
+}
+
+.titre h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+/* Styles pour les paragraphes spécifiques */
+.titre p {
+    font-size: 1.2em;
+    margin: 8px 0;
+}
+
+.images-pres-cv {
+    height: 200px;
+    margin-left: 5px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.titre p em {
+    font-style: italic;
+    color: #8e44ad;
+}
+
+/* Petits titres dans les sections (ex : H3) */
+.texte h3 {
+    color: #34495e;
+    font-size: 1.4em;
+    margin-top: 15px;
+}
+
+/* Style pour les éléments de liste */
+.cv ul {
+    margin-top: 10px;
+}
+
+.cv ul li {
+    padding-left: 20px;
+}
+
+.fraction {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.fraction .num {
+    display: block;
+    font-size: 1em;
+    border-bottom: 1px solid black;
+}
+
+.fraction .denom {
+    display: block;
+    font-size: 1em;
+}
+
+.bloc-choix-cv {
+    display: flex;
+}
+
+.container-egg {
+    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: none;
+}
+
+.easter-egg {
+    display: none;
+    height: 30px;
+    width: 200px;
+}
+
+.minion {
+    height: 30px;
+    width: 30px;
+}
+
+.chuck-norris {
+    height: 30px;
+}
+
+
+
+/*----------------------------------------------------------PAGE3/Lettres----------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*----------------------------------------------------------PAGE4/Métiers----------------------------------------------------------------------------------*/
+
+.metier {
+    font-size: 17, 5px;
+    font-color: black;
+    font-family: Arial, Helvetica, sans-sherif;
+}
+
+.metier_de_Jean {
+    display: none;
+}
+
+.metier_de_Nathan {
+    display: none;
+}
+
+.metier .partie {
+    font)-size: 17, 5px;
+    background-color: #cff1f1;
+    line-height: 1.3;
+    margin: 15px;
+    width: 95%;
+    border-radius: 15px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+}
+
+
+.metier .partie .intitulé {
+    font-size: 2em;
+    color: #fcbc06;
+    border-block: 0px;
+    font-style: bold;
+    witdh: 90%;
+    text-align: left
+}
+
+.metier .intitulé {
+    font-size: 45px;
+    font-style: Arial, Helvetica, sans-sherif;
+    color: #3475b9;
+    text-align: center;
+    height: 1.5 em;
+    witdh: max-content;
+    margin: 15px;
+    padding: 15px;
+    background-color: #80c8e8;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+
+}
+
+.encadré_titre {
+    width: 95%;
+    height: 75px;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #0959cd;
+    /*#d8602f*/
+    font-style: bold;
+    font-size: 35px;
+    text-align: center;
+    background-color: #6bc6ff;
+}
+
+
+.boite_de_présentation {
+    font-family: Arial, Helvetica, sans-sherif;
+    font-size: 1.1em;
+    width: 95%;
+    text-align: justify;
+    margin: 15px 5px;
+    padding: 10px;
+}
+
+.big {
+    font-size: 1.5 em;
+}
+
+.annotations {
+    font-size: 0.7em;
+}
+
+.imgs-metiers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgs-metiers img {
+    border-radius: 20px;
+}
+
+
+/*----------------------------------------------------------PAGE5/CODE/SURPRISE-----------------------------------------------------------------------*/
+
+
+/* utile pour positionner les différents éléments */
+.fenetre_globale {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 15px;
+}
+
+/* bandeau 1/3 page à gauche */
+/*BANDEAU*/
+
+.bandeau {
+    display: flex;
+    position: fixed;
+    padding: 15px;
+    flex-direction: column;
+    border-radius: 40px;
+    width: 20%;
+    height: 80%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: lightblue;
+    z-index: 0;
+}
+
+.tuto-paint {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.tuto-paint button {
+    width: 50%;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+
+}
+
+.boutons_extras {
+    /* encardré des boutons extras de type binder, set couelurs*/
+    display: flex;
+    width: 100%;
+    height: min-content;
+    gap: 10px;
+}
+
+.bind_valeurs {
+    background-color: red;
+    /*         ABRUTI          */
+}
+
+
+.bandeau .encadre_slider_longueur {
+    /* Élément de mise en page des sliders longueur */
+    width: 93%;
+    margin: 5px;
+    height: 140px;
+    background-color: steelblue;
+    z-index: 10;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+    padding: 5px;
+    font-style: Arial, Helvetica, sans-serif, bold;
+}
+
+.bandeau .encadré_slider_epaisseur_tracé {
+    width: 93%;
+    margin: 5px;
+    height: 70px;
+    background-color: steelblue;
+    z-index: 10;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+    padding: 5px;
+    font-style: Arial, Helvetica, sans-serif, bold;
+}
+
+
+
+.sliders_taille .valeur {
+    /* Le petit encadré bizarre à droite */
+    font-size: inherit;
+    text-align: left;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    margin: 2.5px 2.5px;
+    width: 60px;
+    height: 10px;
+    z-index: 20;
+}
+
+/* COULEUR */
+.bloc_couleur {
+    display: flex;
+    width: 94%;
+    height: 200px;
+    margin: 5px;
+    z-index: 10;
+    margin-right: 10px;
+    margin-left: 5px;
+    padding: 5px;
+    background-color: steelblue;
+    border-radius: 20px;
+
+}
+
+.bloc_couleur .couleur .bloc_sliders_couleurs {
+    display: flex;
+    flex-direction: column;
+    background-color: powderblue;
+    width: 60%;
+    height: 94%;
+    margin: 5px;
+    border-radius: 15px;
+    border: 1px solid black;
+
+}
+
+/* Bloc contenant toute la couleur (pour bien le placer dans le bandeau) */
+
+
+.slider_couleur,
+.sliders_taille {
+    /* Bah c'est le conteneur de chaque bloc slider couleur quoi... */
+    width: 100%;
+    height: 40px;
+    margin: 2px;
+    z-index: 20;
+    font-style: Arial, Helvetica, sans-serif, bold;
+
+}
+
+#slider-couleur-rouge {
+    margin-top: 5px;
+}
+
+.slider-bleu,
+.slider-vert,
+.slider-rouge,
+.slider-oppacité {
+    width: 55%;
+    height: 10px;
+}
+
+.valeur_couleur {
+    width: 20%;
+    margin: 3px;
+    height: max-content;
+    margin-left: 2px;
+
+}
+
+.carre_couleur {
+    /* Carré d'affichage des couleurs pour voir nos mélanges */
+    width: 40%;
+    height: 94%;
+    margin-left: 2px;
+    margin: 5px;
+    border: 1px solid black;
+    background-color: black;
+    z-index: 20;
+    border-radius: 15px;
+}
+
+/* Aire de dessin */
+
+/* Élément de mise en page pour placer le canvas */
+.dessin {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-left: 400px;
+}
+
+/* Le canva accueuillant le dessin */
+.canvas {
+    position: fixed;
+    background-color: #cedbde;
+    border: 1px solid black;
+    border-radius: 40px;
+    margin: 10px;
+}
+
+.overlay_canvas {
+    position: fixed;
+    background-color: none;
+    border: 1px solid black;
+    border-radius: 40px;
+    margin: 10px;
+    display: none;
+}
+
+/* Barre de sélection de pages */
+
+.boite_boutons_pages {
+    display: flex;
+    position: fixed;
+    margin: 5px;
+    width: 100%;
+    height: 20px;
+    z-index: 1000
+}
+
+
+.boite_boutons_pages .page {
+    /* Les différents éléments de la barre verticale: tous des boutons, en principe */
+    height: auto;
+    font-size: auto;
+    border-radius: 3px;
+    margin: 3px;
+    border: 1px solid black;
+    padding: 4px;
+    z-index: 1001
+}
+
+
+/*Bouton GENERER*/
+
+.encadré_bouton_generer,
+.encadré_bouton_telecharger,
+.encadré_bouton_effacer {
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.bouton_generer,
+.bouton_telecharger,
+.bouton_effacer {
+    width: 94%;
+    height: 80%;
+    margin: 7.5px;
+    font-style: Arial, Helvetica, sans-serif, bold;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+
+}

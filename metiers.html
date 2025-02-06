@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>
+        Nos métiers
+    </title>
+
+
+    <link rel="icon" href="assets/images/bonhommecravaterouge.png">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+
+<body>
+    <span class="search-icon material-symbols-outlined" id="loupe_suiveuse">search</span>
+    <div class="bloctitre">
+        <h1 id="titre" onclick="clic('index.html')"> Embauche-moi si tu peux </h1>
+
+
+        <div class="bloc-recherche">
+
+            <span class="search-icon material-symbols-outlined logoloupe" onclick="attrape_loupe()">search</span>
+
+            <input class="input-recherche" type="search" id="input-recherche" placeholder="Rechercher"
+                onchange="AfficherResultat()" onclick="poser_loupe()" />
+
+            <button class="bouton-recherche" type="submit" title="Rechercher"
+                onclick="AfficherResultat()">Rechercher</button>
+
+            <button class="bouton-réinitialiser" type="reset" title="Réintialiser"
+                onclick=location.reload()>Réintialiser</button>
+        </div>
+
+        <div class="liens">
+            <a href="index.html">Accueil</a>
+            <a href="cv.html">Nos CVs</a>
+            <a href="lettres.html">Lettres de motivation</a>
+            <a href="metiers.html">Nos futurs métiers</a>
+            <a href="page5.html">Code Surprise</a>
+        </div>
+    </div>
+
+    <br>
+    <hr><br><br>
+    <hr>
+
+
+
+
+
+
+
+
+    <div class="titre_page">
+        <h1>NOS FUTURS METIERS</h1>
+    </div>
+
+    <div class="metier">
+        <div class="boite_de_présentation">
+            Bienvenue sur la page web dédiée à nos futurs métiers. Tels que vous allez être forcés de le constater, nous
+            allons changer le Monde grâce à nos capacités intellectuelles surdéveloppées et notre capacité à nous
+            dépasser.
+        </div>
+    </div>
+
+    <div>
+        <p>De quel <a href="https://fr.wikipedia.org/wiki/G%C3%A9nie_(personne)">génie</a> souhaitez-vous consulter le
+            métier?</p>
+        <select id="menu-metiers" class="champ_de_selection" onchange="choixmetier()">
+            <option class="option" value="" disabled selected>Choisissez un Métier</option>
+            <option class="option" value="J">Métier de Jean</option>
+            <option class="option" value="N">Métier de Nathan</option>
+        </select>
+    </div>
+
+    <hr>
+
+
+
+
+
+    <div class="metier_de_Jean" id="metier_de_Jean">
+
+        <div class="encadré_titre">
+            Métier de Jean: Consultant en bien-être salarial
+        </div>
+        <div class="texte">
+            <span class="big">Mon métier de rêve serait de devenir un <strong>CEBS: consultant en bien-être
+                    salarial</strong> dans votre entreprise.</span>
+        </div>
+
+        <div class="texte">
+            <h2>Qu'est-ce qu'un CEBS?</h2>
+            <p>
+                Le Consultant en bien-être salarial est avant toute chose un expert dans l'art subtil de ne rien faire
+                tout en ayant l'air occupé. Son rôle au sein de votre entreprise est d'aider à la productivité de
+                l'entreprise mais surtout à l'amélioration de la qualité de vie des employés.
+            </p>
+            <p>
+                Il est donc chargé de diverses tâches variées et absolument indispensables à la productivité d'une
+                entreprise de cette ampleur.
+            </p>
+        </div>
+
+        <div class="texte">
+            <h2>Les missions du conseiller en bien-être salarial :</h2>
+            <ul>
+                <li>
+                    <div>Optimisation des temps de sieste :</div>
+                    La sieste est un aspect central de la vie en entreprise. C'est pourquoi le CEBS a pour rôle de créer
+                    des stratégies de sieste optimisées, pour booster les performances de l'entreprise. Il est ensuite
+                    chargé de les appliquer, ce qui passe avant tout par une longue phase de test en conditions réelles.
+                </li>
+                <li>
+                    <div>Entretien des lieux de repos :</div>
+                    Les salariés sont amenés à effectuer des pauses en allant dans la salle de repos. C'est pourquoi le
+                    CEBS est chargé de l'entretien de ces lieux. Durant la journée, vous pourrez ainsi l'observer en
+                    train de vérifier le bon fonctionnement de la machine à café, ou encore que les snacks du mini-bar
+                    ne sont pas périmés.
+                </li>
+                <li>
+                    <div>Organisation d'after-works :</div>
+                    Le CEBS se débrouille toujours pour organiser de bons plans dans des restaurants à la mode.
+                    Cependant, celui-ci étant un homme de famille, il est toujours forcé de quitter le groupe avant de
+                    payer l'addition.
+                </li>
+            </ul>
+            <p>
+                Ma présence dans l'entreprise en tant que conseiller en bien-être salarial serait absolument
+                indispensable pour les employés et loin d'être une dépense inutile. D'après mes estimations, la
+                productivité de l'entreprise serait multipliée par 16! <span class="annotations">Vous pouvez me croire
+                    sur parole, je vous rappelle que je suis directeur de laboratoire au CNRS.</span>
+            </p>
+            <div class="imgs-metiers">
+                <img alt="illustration-bien-etre-salarial" title="Le bien-être salarial"
+                    src="assets/images/bienetresalarial.jpg">
+            </div>
+        </div>
+
+        <!-- Pied de page -->
+        <div class="footer">
+            <hr>
+            <br>
+            <p class="texte">Ce site a été créé par Nathan Foucart et Jean Cerisier
+                <br> Nous contacter :
+                <br> <a href="mailto:foucart.nath@gmail.com">foucart.nath@gmail.com</a> ; <a
+                    href="mailto:cerisier.jean.92@gmail.com">cerisier.jean.92@gmail.com</a>
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <div class="metier_de_Nathan" id="metier_de_Nathan">
+        <div class="encadré_titre">
+            Métier de Nathan: Chercheur... de travail
+        </div>
+        <div class="texte">
+            <span class="big">Le métier parfait selon moi serait celui de <u><b>CDT</b> : <a
+                        href="https://fr.wikipedia.org/wiki/Chercheur">Chercheur</a> De Travail</u>.
+        </div>
+
+        <div class="texte">
+            <h2>Le Chercheur (de travail) :</h2>
+            <p>
+                Le <b>Chercheur De Travail</b> est un véritable scientifique du marché de l’emploi. Tel un chercheur en
+                laboratoire, il applique des méthodologies rigoureuses pour analyser en profondeur les offres d’emploi.
+                Armé d’outils d’analyse comparative, de statistiques précises et d’une méthodologie expérimentale, il
+                teste différentes stratégies de candidature, mesure l’impact des variables (mots-clés, format du CV,
+                timing des envois) et tire des conclusions fondées sur des données tangibles. Son travail repose sur
+                l’observation systématique, l’expérimentation contrôlée et l’adaptation continue, faisant de lui un
+                expert dans la compréhension fine des dynamiques du marché du travail.
+            </p>
+            <p>
+                Grâce à <b>des années d’expérience</b> dans le domaine du "je cherche, donc je suis", il a développé
+                une méthodologie rigoureuse et une éthique de travail irréprochable (bien qu'encore en phase
+                expérimentale).
+            </p>
+        </div>
+
+        <div class="texte">
+            <h2>Ce que fait le chercheur (de travail toujours) :</h2>
+            <ul>
+                <li>
+                    <b>Application d'un protocole scientifique strict :</b>
+                    envoi de CV, analyse du taux de réponse, étude approfondie des formules de politesse les plus
+                    efficaces. Cette recherche requiert un temps d’incubation de plusieurs semaines, voire plusieurs
+                    mois, pour obtenir des résultats… qui restent souvent négatifs.
+                </li>
+                <li>
+                    <b>Optimisation du confort de recherche :</b>
+                    Un environnement de travail optimal est essentiel à la réussite d’un CDT. Etant en mouvement
+                    constant, il se doit être inventif pour trouver des lieux de travail temporaires et étudier
+                    leur ergonomie (que ce soit des canapés, des lits, ou encore le sol), trouver le bon
+                    positionnement de son ordinateur portable et le taux optimal de caféine pour maximiser la
+                    productivité tout en minimisant l’anxiété.
+                </li>
+                <li>
+                    <b>Tests en conditions réelles :</b>
+                    Comme tout bon scientifique, le CDT procède à des tests grandeur nature : simulation de dialogue,
+                    optimisation du sourire en visio, maîtrise de l’art du "je suis passionné depuis toujours par votre
+                    entreprise (que je viens de découvrir il y a pas 12 minutes)". Malheureusement, la plupart de ces
+                    expériences se concluent par la fameuse phrase "Nous avons bien pris en compte votre candidature et
+                    nous vous recontacterons", un phénomène encore inexpliqué à ce jour.
+                </li>
+                <li>
+                    <b>Exploration des dimensions parallèles de l’emploi :</b>
+                    Face aux limites du marché du travail classique, le CDT élabore des théories révolutionnaires sur
+                    l’existence d’univers alternatifs où il aurait déjà un CDI. Grâce à une approche multidisciplinaire
+                    mêlant physique quantique et science-fiction, il postule que quelque part, dans un continuum
+                    espace-temps encore inconnu, il existe une version de lui-même qui reçoit des réponses positives
+                    et...
+                    qui a même une mutuelle !
+                </li>
+            </ul>
+            <p>
+                Loin d’être une activité inutile, la recherche de travail contribue activement à l’évolution du marché
+                de l’emploi. Sans les CDT, les recruteurs ne recevraient pas leurs centaines de candidatures
+                quotidiennes, et les algorithmes de tri automatique n’auraient plus de raison d’exister.
+                Ma présence dans ce domaine est donc indispensable. Selon mes propres études, la probabilité de
+                décrocher un emploi grâce à ma méthodologie est de 3,7%. Ce qui est statistiquement <i>presque
+                    encourageant</i>.
+            </p>
+            <div class="imgs-metiers">
+                <img alt="illustration-chercheur" title="Le Chercheur de Travail"
+                    src="assets/images/chercheurtravail.jpg">
+            </div>
+        </div>
+
+        <!-- Pied de page -->
+        <div class="footer">
+            <hr>
+            <br>
+            <p class="texte">Ce site a été créé par Nathan Foucart et Jean Cerisier
+                <br> Nous contacter :
+                <br> <a href="mailto:foucart.nath@gmail.com">foucart.nath@gmail.com</a> ; <a
+                    href="mailto:cerisier.jean.92@gmail.com">cerisier.jean.92@gmail.com</a>
+            </p>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

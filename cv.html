@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    TITRE - Nos CVs
+  </title>
+
+  <link rel="icon" href="assets/images/bonhommecravaterouge.png">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+
+<body class="cv">
+  <span class="search-icon material-symbols-outlined" id="loupe_suiveuse">search</span>
+  <div class="bloctitre">
+    <h1 id="titre" onclick="clic('index.html')"> Embauche-moi si tu peux </h1>
+
+
+    <div class="bloc-recherche">
+
+      <span class="search-icon material-symbols-outlined logoloupe" onclick="attrape_loupe()">search</span>
+
+      <input class="input-recherche" type="search" id="input-recherche" placeholder="Rechercher"
+        onchange="AfficherResultat()" onclick="poser_loupe()" />
+
+      <button class="bouton-recherche" type="submit" title="Rechercher" onclick="AfficherResultat()">Rechercher</button>
+
+      <button class="bouton-réinitialiser" type="reset" title="Réintialiser"
+        onclick=location.reload()>Réintialiser</button>
+    </div>
+
+    <div class="liens">
+      <a href="index.html">Accueil</a>
+      <a href="cv.html">Nos CVs</a>
+      <a href="lettres.html">Lettres de motivation</a>
+      <a href="metiers.html">Nos futurs métiers</a>
+      <a href="page5.html">Code Surprise</a>
+    </div>
+  </div>
+
+  <br><br>
+  <hr><br>
+  <hr>
+
+
+  <span class="titrepage">Nos CVs</span>
+  <br class="texte"> Nous allons vous démontrer nos capacités hors du commun et pourquoi nous sommes absolument
+  extrordinaires.</br>
+
+
+  <p>Quel CV souhaitez-vous consulter ?</p>
+  <div class="bloc-choix-cv">
+    <select id="menu-cvs" class="champ_de_selection" onchange="choixcv()">
+      <option value="" disabled selected>Choisissez un CV</option>
+      <option value="J">CV de Jean</option>
+      <option value="N">CV de Nathan</option>
+    </select>
+    <div class="container-egg" id="container-egg">
+      <a class="easter-egg" href="https://i.makeagif.com/media/10-01-2015/n6nbPF.gif">
+        <img class="minion" src="assets/images/minion.jpg" alt="image-minion" title="j'ai un truc pour toi">
+        tu m'as trouvé !
+      </a>
+    </div>
+  </div>
+
+
+
+  <!-- CV de Jean: -->
+
+  <div class="cv-de-jean" id="cv-J">
+    <hr>
+    <div class="titre">
+      <h1>Cerisier Jean</h1>
+    </div>
+    <div class="entete-cv">
+      <a href="assets/images/jean.png" download>
+        <img class="images-pres-cv" src="assets/images/jean.png" title="C'est Jean" alt="Image de Jean sauvage">
+      </a>
+      <div class="titre">
+        <br>
+        <p><strong class="informations_importantes">Métier</strong> : Je suis un scientifique de talent : j'ai réussi à
+          résoudre
+          des équations dès la classe de 2nde (ceux qui y arrivent en troisième sont clairement trop nuls). Bref, je
+          suis chef de laboratoire au <stong>CNRS</stong></em></p>
+        <p><strong class="informations_importantes">Email</strong> : cerisier.jean.92@gmail.com</p>
+        <p><strong class="informations_importantes">Téléphone</strong> : 06 82 02 81 72</p>
+        <p><strong class="informations_importantes">Date de naissance</strong> : 26/09/2008. Pour les paumés au fond de
+          la
+          classe : ça fait 16 ans que l'humanité progresse à grands pas grâce à moi</p>
+      </div>
+    </div>
+
+    <div class="texte">
+      <h2>Objectif professionnel</h2>
+      <p>
+        J'en ai plusieurs:
+      <ul>
+        <li>Comprendre pourquoi Javascript est fâché avec moi</li>
+        <li>Devenir <strong>Ambassadeur du repos actif</strong>, une profession très réspectée de nos jours</li>
+      </ul>
+    </div>
+
+    <div class="texte">
+      <h2>Compétences</h2>
+      <ul>
+        <li><strong>Python</strong> : Je suis un sacré <strong> dresseur de serpents</strong> <span class="italic">ok,
+            celle-là est assez nulle</span></li>
+        <li><strong>HTML / JavaScript</strong> : Écrire du code à une main tout en buvant un café, mais en vrai,
+          <strong>qui n'en est pas capable ?</strong>
+        </li>
+        <li><strong>Langues:</strong>
+          <ul>
+            <li><strong>Allemand (B1)</strong> : Une fois que j'ai dit " Kafee bitte", le serveur m'a regardé et m'a dit
+              " Sind sie Chinese?" ce qui veut clairement dire "un expresso?. Bref, je suis carrément
+              <strong>fluide"</strong>
+            </li>
+            <li><strong>Anglais (un peu bilingue sur les bords)</strong> : J'ai encore un peu de mal avec la structure
+              des phrases mais à quelques détails près,<strong> ça passe</strong>.</li>
+          </ul>
+        </li>
+        <li><strong>Autres compétences</strong> :
+          <ul>
+            <li>Sérieux : Disons... <strong>randint(0,20)%</strong> (en cas de besoin (mais vraiment quand il le faut(mais
+              vraiment quand il le faut <strong>VRAIMENT VRAIMENT</strong>))).</li>
+            <li>Sociabilité : <strong>Professionnel</strong> Bien que je parles pas trop avec les humains, je "parle"
+              meme avec mon code quand il ne marche pas, si <strong>CA</strong> c'est pas de la sociabilité!</li>
+            <li>Engagement professionnel de folie: les gens aiment dire que je ne suis pas célibataire par choix, mais
+              entre nous, vous savez tous <strong>très bien</strong> que c'est pour me concentrer sur ma carrière...
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="texte">
+      <h2>Expériences professionnelles</h2>
+      <ul>
+        <li><strong class="informations_importantes">Compétences informatiques </strong>: Lors de mes projets en cours
+          de NSI
+          en 2024 et 2025, j'ai pu découvrir avec grand plaisir que les ordinateurs et moi étions manifestements fâchés
+        </li>
+        <li><strong class="informations_importantes">Jardinier (skill haut niveau)</strong> : Une carrière bien rodée
+          depuis<strong>
+            12 ans</strong>, je coupe les mauvaises herbes avec une <strong>précision chirurgicale</strong>. Parfait
+          pour les fins de mois et pour que le propriétaire <span class="italic"> (mes parents)</span> me laisse tranquille,
+          une pierre deux coups en quelque sorte.</li>
+        <li><strong class="informations_importantes">Sociabilité extrême</strong> : Il me semble que J'ai déja parlé à
+          des
+          inconnus dans un supermarché il y maintenant environ 8 mois.</li>
+      </ul>
+    </div>
+
+    <div class="texte">
+      <h2>Actions Notables:</h2>
+      <ul>
+        <li>
+
+          J'ai regardé l'intégrale des 1070 épisodes de One Piece en 4ème ( tout ce qui était sorti), le tout en
+          <strong>51 jours</strong>.
+          Voici donc le temps total dépensé: <code>1070 x 23 = 24610min au total</code>,
+
+          Ce qui fait une moyenne de:
+          <code>
+		    <span class="fraction">
+			  <span class="num">24610</span>
+			  <span class="denom">51 x 60</span>
+		    </span>
+		  
+            = 8h/jour environ
+		  </code>
+
+          . Plutôt pas mal non?
+          <br>
+          <light>Pour le contexte: c'était le premier animé que j'avais jamais vu donc j'tais comme un fou, vous
+            inquiétez pas, je suis sain mentalement</light></br>
+        </li>
+        <li>
+          <strong class="informations_importantes">Saut en parachute</strong> : En poker face parce que c'est plus drôle.
+        </li>
+      </ul>
+
+      <h3>Réalisations</h3>
+      <ul>
+        <li><strong class="informations_importantes">Brevet des Collèges</strong> : 641/800, c'était suffisant pour
+          avoir la
+          mention très bien</li>
+        <li><strong class="informations_importantes">Certification d'allemand</strong> : Un magnifique B1.</li>
+        <li><strong class="informations_importantes">Échange linguistique de 3 mois en Angleterre</strong> : Je suis
+          désormais
+          <strong>presque britannique</strong> (presque).
+        </li>
+        <li><strong class="informations_importantes">Championnats régionaux en athlétisme</strong> : Spécialisé en
+          <strong>saut
+            à la perche</strong> (même si la perche n'a pas toujours voulu coopérer).
+        </li>
+      </ul>
+    </div>
+
+    <div class="texte">
+      <h2>Formation</h2>
+      <p><strong class="informations_importantes">Ecole de la petite section jusqu'à la première</strong> : Une carrière
+        scolaire qui me place déja parmi les meilleurs des meilleurs</p>
+      <p><strong class="informations_importantes">Institution</strong> : <strong>Congrégation Notre-Dame</strong> : Un
+        établissement où l'on m'a appris à <strong>ignorer les devoirs</strong> et à <strong>me battre pour ma
+          nourriture</strong> dans la jungle qu'est la cafet'.</p>
+      <p><strong class="informations_importantes">Période</strong> : <strong>Longtemps</strong> (ça n'a pas de fin,
+        apparemment).</p>
+    </div>
+
+    <div class="texte">
+      <h2>Projets</h2>
+      <p><strong class="informations_importantes">Projet principal</strong> : Me faire <strong>recruter chez
+          vous</strong>.
+        Un projet ambitieux, mais avec ma détermination et mon génie, ce serait faire une croix sur un avenir radieux.
+      </p>
+    </div>
+
+    <div class="texte">
+      <h2>Centres d'intérêt</h2>
+      <ul>
+        <li><strong class="informations_importantes">Informatique</strong> : Parce que <em>programmer et regarder des
+            <strong>vidéos débiles</strong>
+            <light> d'après mon père mais on sait tous très bien que plus ca explose, plus c'est drole</light>
+          </em> est la base de ma vie.</li>
+        <li><strong class="informations_importantes">Spatial</strong> : En astronomie, je suis plutôt dans les
+          <strong>
+            étoiles</strong> même si d'après mes parents, mon truc c'est plutot d'être dans la Lune. <br>
+          <light>Si vous comprenez, je veux bien des explications parce que j'y arrive vraiment pas</light></br>
+        </li>
+        <li><strong class="informations_importantes">Cosmologie</strong> : Je passe mon temps à réfléchir à l'univers…
+          et à mes
+          devoirs en même temps.</li>
+        <li><strong class="informations_importantes">Explosions</strong> (entertainment purposes only) : La seule chose
+          qui
+          rend la vie plus excitante que de rester assis devant un ordinateur. Mais je reste
+          <strong>responsable</strong>, je promets.
+        </li>
+        <light>Juste au cas ou: je ne fais RIEN d'illégal</light>
+      </ul>
+    </div>
+
+    <!-- Pied de page -->
+    <div class="footer">
+      <hr>
+      <br>
+      <p class="texte">Ce site a été créé par Nathan Foucart et Jean Cerisier
+        <br> Nous contacter :
+        <br> <a href="mailto:foucart.nath@gmail.com">foucart.nath@gmail.com</a> ; <a
+          href="mailto:cerisier.jean.92@gmail.com">cerisier.jean.92@gmail.com</a>
+      </p>
+    </div>
+  </div>
+
+
+
+  <!-- CV de Nathan: -->
+
+  <div class="cv-de-nathan" id="cv-N">
+    <hr>
+    <div class="titre">
+      <h1>Foucart Nathan</h1>
+    </div>
+    <div class="entete-cv">
+      <a href="assets/images/nathan.png" download>
+        <img class="images-pres-cv" src="assets/images/nathan.png" title="C'est Nathan"
+          alt="Image d'un Nathan malicieux">
+      </a>
+      <div class="titre">
+        <br>
+        <p><strong class="informations_importantes">Métier</strong> : Spécialiste en développement intellectuel,
+          stratège de
+          l'acquisition de savoirs, œuvrant sans relâche à la construction de compétences essentielles pour l'avenir.
+          (Elève)
+        <p><strong class="informations_importantes">Email</strong> : foucart.nath@gmail.com</p>
+        <p><strong class="informations_importantes">Téléphone</strong> : 06 36 10 91 16</p>
+        <p><strong class="informations_importantes">Date de naissance</strong> : 10/12/2008 (soit illuminant la Terre
+          et
+          inspirant le monde en propageant son charisme partout depuis 16 belles années.)</p>
+      </div>
+    </div>
+
+    <div class="texte">
+      <h2>Objectif professionnel</h2>
+      <p><b>Etre riche.</b></p>
+    </div>
+
+    <div class="texte">
+      <h2>Compétences</h2>
+      <p> Bien trop nombreuses pour être énumérées, mais voici tout de même une liste <b>NON EXHAUSTIVE</b> de ces
+        dernières :</p>
+      <ul>
+        <li><strong>Jeu Vidéo</strong> : <b>Expert dans la création de jeux vidéo</b>, il me semble bien que j'ai Unity
+          d'installé sur mon ordinateur, et j'ai déja dû utiliser Scratch en 4eme.</li>
+        <li><strong>Marketing</strong> : Parfait en négociations, recherche de compromis, pubs et manipulation. --> Une
+          fois au restaurant j'ai voulu manger gratuitement, bon j'ai perdu le débat mais j'ai quand même négocié...
+        </li>
+        <li><strong>Génie des Mathématiques</strong> : Je cite M. Eric Dufour : "[...] Nathan semble avoir trouvé son
+          rythme ; il faut poursuivre dans cette voie.", franchement, tout y est dit.
+        <li><strong>Langues</strong> :
+          <ul>
+            <li><strong>Anglais</strong> : Yes of course, I english</li>
+            <li><strong>Espagnol</strong> : J'aime la paella et le chorizo... Ah et je sais <i>à peu près</i> me
+              présenter.</li>
+          </ul>
+        </li>
+        <li><strong>Autres compétences</strong> :
+          <ul>
+            <li>Très adaptatif : <i>menfou</i>, je m'adapte</li>
+            <li>Incapacité à se concentrer : Peut - sûrement - s'avérer utile. Je cherche encore comment et pourquoi
+              mais on va bien finir par trouver. N'hesitez pas si vous avez des idées en tout cas...</li>
+            <li>Efficacité : J'adore le <b>vite fait bien fait</b>. (et c'est même pas parce que je fais les choses au
+              dernier moment (croyez moi svp (nan vraiment (oui bon OK c'est pour ca <b>VOILA</b>, vous êtes content
+              ?)))).</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="texte">
+      <h2>Expérience/s professionnelle/s</h2>
+      <ul>
+        <li><strong class="informations_importantes">Mc Donald's</strong> En me rendant dans un Mc Donald's pour y
+          déjener
+          accompagné d'un ami, j'ai eu lors de la phase d'attente due
+          a la préparation de ma commande, l'absolument formidable opportunité d'effectuer un <b>stage d'observation</b>
+          du fonctionnement interne du
+          restaurant, allant de l'organisation logistique ainsi que hiérarchique aux plus fins détails de la préparation
+          méticuleuse des repas. Ce <b>stage</b>
+          d'approximativement 4 minutes et 30 secondes m'a ainsi permis une acquisition de rigueur dans mes observations,
+          ainsi qu'une idée concrète,
+          précise et enrichissante de l'organisation d'un restaurant ainsi que du monde du travail en général.</li>
+        <li><strong class="informations_importantes">Agent secret</strong> : L'autre jour je jouais aux <b>espions</b>
+          avec mon
+          cousin, c'était certes imaginaire mais vu que j'imagine
+          bien je ne vois aucun problème à compter cela comme une experience professionnelle.</li>
+        <li><strong class="informations_importantes">Haivision</strong> : J'ai eu en juin 2024 la magnifique opportunité
+          d'effectuer un <b>stage</b> de mi-observation mi-pratique dans
+          une entreprise de renommée mondiale dans le domaine de la transmission vidéo, <b>Haivision</b>. J'ai durant
+          cette periode eu la chance de
+          participer a diverses tâches du quotidien entreprise, telles que du <b>Product Management, des taches diverses
+            en Production, du Débogage,
+            des Tests de Fonctionnement, des préparations de barbecues, des emballages de cadeaux, la préparation d'une
+            grande soirée, la participation
+            à cette dernière</b> (j'ai même pu prendre une photo au photomaton avec le CEO), et j'en passe. En bref
+          cette experience m'a permis
+          l'acquisition de nombreuses qualités et m'a parfaitement familiarisé avec la vie en entreprise (mes préférées
+          c'est les brochettes au boeuf
+          avec de la sauce BBQ).</li>
+        <li><strong class="informations_importantes">Wikipédia</strong> : J'ai déja modifié un <b>article Wikipédia</b>,
+          ce qui
+          fait de moi un contributeur de cette dernière plateforme,
+          soit par extension un <b>rédacteur d'articles culturels</b>. (<i>bon j'ai par la suite fini par être banni
+            pour vandalisme, j'interpreterais
+            plutot cela comme un rejet de mon immense intelligence due a une jalousie a peine cachée</i>)</li>
+      </ul>
+    </div>
+
+    <div class="texte">
+      <h2>Actions Notables</h2>
+      <p>Je ne peux malheureusement pas le dévoiler mais j'ai été agent pour la DGSI (<b>D</b>irection <b>G</b>énérale
+        de la <b>S</b>urveillance <b>I</b>nterieure), je ne me rappelle navrement plus des dates car ils m'ont fait le
+        truc lumineux là qui fait perdre la mémoire, comme dans Men In Black.</p>
+      <h3>Réalisations</h3>
+      <ul>
+        <li><strong class="informations_importantes">Meilleur Projet NSI - Edition 2/2 2024</strong> : Gagnant du grand
+          et
+          préstigieux concours du plus grand et meilleur projet de NSI pour l'édition 2/2 de 2024, au suffrage universel
+          direct !</li>
+        <li><strong class="informations_importantes">Presque Battu le Record du Monde de vitesse à pied</strong> : J'ai
+          avec
+          honeur déja réussi à attraper le métro après avoir couru tel un veritable guépar juste avant la fermeture des
+          portes, le <i>diiinng</i> retentissait !</li>
+      </ul>
+    </div>
+
+    <div class="texte">
+      <h2>Formation</h2>
+      <p><strong class="informations_importantes">Ecole de la petite section jusqu'à la première</strong> : </p>
+      <p> Prémices de ma formation dans des <b>écoles publiques parisiennes</b> (où j'ai appris la loi du plus fort, le
+        maniement d'armes et l'irrespect),
+        pour être ensuite allé dans un <b>collège privé malakoffiot</b> (où j'ai appris... bah pas grand chose enfaite),
+        pour finalement être actuellement scolarisé dans
+        un <b>lycée privé meudonnais, L'Institut Notre-Dame de Meudon</b> (où j'apprends la rigueur, l'investissement,
+        les joies du travail récompensé, l'acharnement,
+        à toujours repousser mes limites et à étendre mon savoir sans aucunes limites. C'est bon tu l'as le chèque, ah
+        attends deux secondes la saisie vocales est
+        encore activée, voilà).</p>
+      <p><strong class="informations_importantes">Durée d'études</strong> : Je ne sais pas, quand on aime on ne compte
+        pas. Bon
+        serieux tu l'as le chèque ?</p>
+    </div>
+
+    <div class="texte">
+      <h2>Projets</h2>
+      <p><strong class="informations_importantes">Projet principal</strong> : Etre recruté chez <b>vous</b>. (;</p>
+    </div>
+
+    <div class="texte">
+      <h2>Centres d'intérêt</h2>
+      <ul>
+        <li><strong class="informations_importantes">L'exploration</strong> : J'aime explorer, que ce soit dans la
+          nature ou en
+          ville, légal ou illégal, safe ou pas, ou quoi que ce soit d'autre. J'aime explorer les
+          forets, les vieux villages, <b>les coffres forts de banques remplis d'argent</b>, les grandes avenues de
+          Paris, les montagnes, etc. En emportant toujours un souvenir, <b>plus</b> ou moins gros.</li>
+        <li><strong class="informations_importantes">L'informatique en général</strong> : Tout ce qui touche de près ou
+          de loin
+          à l'informatique, que ce soit les jeux vidéo, la programmation, les jeux vidéo, la cybersécurité, les jeux
+          vidéo, simplement faire "joujou" avec mon ordinateur ou encore les jeux vidéo.</li>
+        <li><strong class="informations_importantes">Les sciences en général</strong> : Tout ce qui touche aux sciences,
+          que ce
+          soit l'astrologie et la conquête spatiale, <b>synthétiser de la méthamphétamine dans un camping car en plein
+            désert avec un "prof particulier"</b>, la physique quantique, etc. J'ai tout de même un intérêt moindre pour
+          la biologie/les sciences de la vie et de la terre.</li>
+        <li><strong class="informations_importantes">Regarder des films et séries</strong> : Comme tout humain, j'aime
+          également regarder des films et des séries, tels que Walker Texas Ranger, Walker Texas Ranger ou encore Walker
+          Texas Ranger. -Chuck Norris est partout, il est tout. <img class="chuck-norris" src="assets/images/chuck.png">
+        </li>
+      </ul>
+    </div>
+
+    <!-- Pied de page -->
+    <div class="footer">
+      <hr>
+      <br>
+      <p class="texte">Ce site a été créé par Nathan Foucart et Jean Cerisier
+        <br> Nous contacter :
+        <br> <a href="mailto:foucart.nath@gmail.com">foucart.nath@gmail.com</a> ; <a
+          href="mailto:cerisier.jean.92@gmail.com">cerisier.jean.92@gmail.com</a>
+      </p>
+    </div>
+  </div>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

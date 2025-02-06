@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Code Surprise
+    </title>
+    <link rel="icon" href="assets/images/bonhommecravaterouge.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+
+
+<body>
+    <span class="search-icon material-symbols-outlined" id="loupe_suiveuse">search</span>
+    <div class="bloctitre">
+        <h1 id="titre" onclick="clic('index.html')"> Embauche-moi si tu peux </h1>
+
+
+        <div class="bloc-recherche">
+
+            <span class="search-icon material-symbols-outlined logoloupe" onclick="attrape_loupe()">search</span>
+
+            <input class="input-recherche" type="search" id="input-recherche" placeholder="Rechercher"
+                onchange="AfficherResultat()" onclick="poser_loupe()" />
+
+            <button class="bouton-recherche" type="submit" title="Rechercher"
+                onclick="AfficherResultat()">Rechercher</button>
+
+            <button class="bouton-réinitialiser" type="reset" title="Réintialiser"
+                onclick=location.reload()>Réintialiser</button>
+        </div>
+
+        <div class="liens">
+            <a href="index.html">Accueil</a>
+            <a href="cv.html">Nos CVs</a>
+            <a href="lettres.html">Lettres de motivation</a>
+            <a href="metiers.html">Nos futurs métiers</a>
+            <a href="page5.html">Code Surprise</a>
+        </div>
+    </div>
+
+    <br><br>
+    <hr><br>
+    <hr>
+
+
+
+
+
+    <div class="fenetre_globale">
+
+        <div class="bandeau">
+            <div class="tuto-paint" id="tuto-paint">
+                <button onclick="tuto()">Aide</button>
+            </div>
+            <div class="boite_longueur">
+                <div class="encadre_slider_longueur">
+                    Hauteur :
+                    <div id="slider-hauteur " class="sliders_taille">
+                        <input type="range" min="0" max="500" value="100" id="slider1" oninput="Actualiser_valeur(1)">
+                        <input type="number" class="valeur" min="0" max="500" value="100" id="valeur1"
+                            oninput="Actualiser_slider(1)">
+                    </div>
+                    Largeur :
+                    <div id="slider-largeur" class="sliders_taille">
+                        <input type="range" min="0" max="500" value="100" id="slider2" oninput="Actualiser_valeur(2)">
+                        <input type="number" class="valeur" min="0" max="500" value="100" id="valeur2"
+                            oninput="Actualiser_slider(2)">
+                    </div>
+                </div>
+                <div class="boutons_extras">
+                    <button type="button" class="bind_valeurs" id="binder-valeurs" value="false"
+                        onclick="Actualiser_binder()">Lier hauteur/largeur</button>
+                    <button type="button" onclick="setcouleur('noir')">Noir</button>
+                    <button type="button" onclick="setcouleur('blanc')">Blanc</button>
+
+                </div>
+            </div>
+
+            <div class="bloc_couleur">
+                <div class="bloc_sliders_couleurs">
+
+                    <div id="slider-couleur-rouge" class="slider_couleur">Rouge:<br>
+                        <input type="range" min="0" max="255" value="0" class="slider-rouge" id="slider3"
+                            oninput="Actualiser_valeur(3)">
+                        <input type="number" class="valeur_couleur" min="0" max="255" value="0" id="valeur3"
+                            oninput="Actualiser_slider(3)">
+                    </div>
+
+                    <div id="slider-couleur-vert" class="slider_couleur">Vert:<br>
+                        <input type="range" min="0" max="255" value="0" class="slider-vert" id="slider4"
+                            oninput="Actualiser_valeur(4)">
+                        <input type="number" class="valeur_couleur" min="0" max="255" value="0" id="valeur4"
+                            oninput="Actualiser_slider(4)">
+                    </div>
+
+                    <div id="slider-couleur-bleu" class="slider_couleur">Bleu:<br>
+                        <input type="range" min="0" max="255" value="0" class="slider-bleu" id="slider5"
+                            oninput="Actualiser_valeur(5)">
+                        <input type="number" class="valeur_couleur" min="0" max="255" value="0" id="valeur5"
+                            oninput="Actualiser_slider(5)">
+                    </div>
+
+                    <div id="slider-couleur-opacité" class="slider_couleur">Oppacité:<br>
+                        <input type="range" min="0.1" max="1" value="1" class="slider-oppacité" id="slider6"
+                            oninput="Actualiser_valeur(6)" step="0.1">
+                        <input type="number" class="valeur_couleur" min="0.1" max="1" value="1" id="valeur6"
+                            oninput="Actualiser_slider(6)" step="0.1">
+                    </div>
+                </div>
+                <div class="carre_couleur" id="carre_couleur"></div>
+            </div>
+
+            <div class="encadré_bouton_generer">
+                <button type="button" class="bouton_generer"
+                    title="Générer une forme (glissez sur la feuille pour la voir)" onclick="generer()">Générer la
+                    forme</button>
+            </div>
+            <br>
+
+            <div class="encadré_slider_epaisseur_tracé">Epaisseur du trait :<br>
+                <input type="range" min="1" max="30" value="1" class="slider-epaisseur" id="slider7"
+                    oninput="Actualiser_valeur(7);">
+                <input type="number" class="valeur_epaisseur" min="1" max="30" value="1" id="valeur7"
+                    oninput="Actualiser_slider(7);">
+            </div>
+
+            <div class="encadré_bouton_telecharger">
+                <button type="button" class="bouton_telecharger" title="Télécharger votre dessin"
+                    onclick="telecharger()">Télécharger le dessin</button>
+            </div>
+
+            <div class="encadré_bouton_effacer">
+                <button type="reset" class="bouton_effacer" title="Réintialiser" onclick="effacer()">Effacer</button>
+            </div>
+
+
+        </div>
+
+
+        <div class="dessin">
+            <canvas id="canvas" class="canvas" width="1200px" height="750px"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="scriptpaint.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<title>
+		TITRE - Accueil
+	</title>
+
+
+	<link rel="icon" href="assets/images/bonhommecravaterouge.png">
+
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+
+<body>
+	<span class="search-icon material-symbols-outlined" id="loupe_suiveuse">search</span>
+	<div class="bloctitre">
+		<h1 id="titre" onclick="clic('index.html')"> Embauche-moi si tu peux </h1>
+
+
+		<div class="bloc-recherche">
+
+			<span class="search-icon material-symbols-outlined logoloupe" onclick="attrape_loupe()">search</span>
+
+			<input class="input-recherche" type="search" id="input-recherche" placeholder="Rechercher"
+				onchange="AfficherResultat()" onclick="poser_loupe()" />
+
+			<button class="bouton-recherche" type="submit" title="Rechercher" onclick="AfficherResultat()">Rechercher</button>
+
+			<button class="bouton-réinitialiser" type="reset" title="Réintialiser"
+				onclick=location.reload()>Réintialiser</button>
+
+
+
+		</div>
+
+
+		<div class="liens">
+			<a href="index.html">Accueil</a>
+			<a href="cv.html">Nos CVs</a>
+			<a href="lettres.html">Lettres de motivation</a>
+			<a href="metiers.html">Nos futurs métiers</a>
+			<a href="page5.html">Code Surprise</a>
+		</div>
+	</div>
+
+
+
+	<div class="description-site">
+		<br><br>
+		<hr> <br>
+		<hr>
+
+		<p class="texte">
+			<b>Félicitations</b>, vous avez réussi à accéder au site internet de deux <b>génies</b>, en tous les domaines, <b
+				class="infos-necessaires">Jean Cerisier</b> et <b class="infos-necessaires">Nathan Foucart</b>. Ce n’est pas
+			n’importe quel site :
+			c’est <b>LE</b> site où vous allez découvrir <u>l’immesurable étendue de nos talents exceptionnels, de notre
+				expertise hors norme et de nos visions révolutionnaires</u>.
+
+			<br>Ici, vous aurez droit à une <u>immersion totale dans nos parcours incroyables et impressionnants, nos
+				compétences d’exception et nos accomplissements dignes des plus
+				grands noms de l’industrie</u>. À travers ce site, vous découvrirez <b>nos CV</b>, <b>nos lettres de
+				motivation</b>,
+			et <b>un aperçu des métiers</b> <u>qui nous propulseront infailliblement au sommet de l’échelle
+				professionnelle</u>.
+
+			<br>Ce site est un véritable <b>temple de notre savoir-faire</b>, <u>une déclaration de nos capacités démesurées
+				et de notre talent pur</u>.
+			Nous avons conçu chaque page avec une rigueur d’artistes et une précision de maîtres, pour vous offrir une
+			expérience à en rendre jalouse la perfection elle-même.
+			Soyez prêts à être impressionnés.
+		</p>
+
+		<hr>
+	</div>
+
+
+
+	<div class="boutons-sections">
+
+		<div class="images-sections" onclick="clic('cv.html')">
+			<a>Nos CVs</a> <br>
+			<img class="images-sections-img" src="assets/images/cvs.png" title="Nos CVs" alt="Image de CV">
+		</div>
+		<br>
+		<div class="images-sections" onclick="clic('lettres.html')">
+			<a>Lettres de Motivations</a> <br>
+			<img class="images-sections-img" src="assets/images/lettres.png" title="Lettres de Motivations"
+				alt="Image de lettre de motivation">
+		</div>
+		<br>
+		<div class="images-sections" onclick="clic('metiers.html')">
+			<a>Nos futurs métiers</a> <br>
+			<img class="images-sections-img" src="assets/images/metiers.png" title="Les Metiers Faits Pour Nous"
+				alt="Image metiers">
+		</div>
+		<br>
+		<div class="images-sections" onclick="clic('page5.html')">
+			<a>Code Surprise</a> <br>
+			<img class="images-sections-img" src="assets/images/lapage5.png" title="La page 5..." alt="C'est la page 5...">
+		</div>
+
+	</div>
+
+	<!-- Pied de page -->
+	<div class="footer">
+		<hr>
+		<br>
+		<p class="texte">Ce site a été créé par Nathan Foucart et Jean Cerisier
+			<br> Nous contacter :
+			<br> <a href="mailto:foucart.nath@gmail.com">foucart.nath@gmail.com</a> ; <a
+				href="mailto:cerisier.jean.92@gmail.com">cerisier.jean.92@gmail.com</a>
+		</p>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
