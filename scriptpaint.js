@@ -193,8 +193,8 @@ function draw(e) {
   ctx.lineCap = "round"; // Définit la forme de la ligne (arrondie)
 
   // Calcul des coordonnées du prochain point
-  let X = (e.clientX - infoscanva.left) * (canvas.width / infoscanva.width);
-  let Y = (e.clientY - infoscanva.top) * (canvas.height / infoscanva.height);
+  //let X = (e.clientX - infoscanva.left) * (canvas.width / infoscanva.width);
+  //let Y = (e.clientY - infoscanva.top) * (canvas.height / infoscanva.height);
 
   // Dessine la ligne
   ctx.lineTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
